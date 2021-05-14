@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="MECH CODER.png">
+            </div>
+            <nav>
+                <ul>
+                    <li>Studio</li>
+                    <li>Partners</li>
+                    <li>Media</li>
+                    <li>Contacts</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="circle-box">
+            <svg height="402" width="402 ">
+                <circle r="200" cx="200" cy="200" stroke-width="1px" stroke="grey" fill="none"/>
+            </svg>
+            <svg height="402" width="402 ">
+                <circle r="200" cx="200" cy="200" stroke-width="1px" stroke="white" fill="none" id="svgCircle"/>
+            </svg>
+            <div>
+                <span id="step1"></span>
+                <span id="step2"></span>
+                <span id="step3"></span>
+                <span id="step4"></span>
+                <span id="step5"></span>
+            </div>
+            <div class=user-box id="userBox">
+                <div class="user">
+                    <img src="person-1.jpg">
+                    <h1>IDHAYARAJA</h1>
+                    <P>Follow and support the mech_coder._ page and to get latest updates</P>
+                    <div class=social-links>
+                        <img src="facebook.png">
+                        <img src="instagram.png">
+                        <img src="twitter.png">
+                        <img src="linkedin.png">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="person-2.jpg">
+                    <h1>JENIFER</h1>
+                    <P>Follow and support the mech_coder._ page and to get latest updates</P>
+                    <div class=social-links>
+                        <img src="facebook.png">
+                        <img src="instagram.png">
+                        <img src="twitter.png">
+                        <img src="linkedin.png">
+                    </div>
+                </div>  
+                <div class="user">
+                    <img src="person-3.jpg">
+                    <h1>PETER</h1>
+                    <P>Follow and support the mech_coder._ page and to get latest updates</P>
+                    <div class=social-links>
+                        <img src="facebook.png">
+                        <img src="instagram.png">
+                        <img src="twitter.png">
+                        <img src="linkedin.png">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="person-4.jpg">
+                    <h1>OLIVIA</h1>
+                    <P>Follow and support the mech_coder._ page and to get latest updates</P>
+                    <div class=social-links>
+                        <img src="facebook.png">
+                        <img src="instagram.png">
+                        <img src="twitter.png">
+                        <img src="linkedin.png">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="person-5.jpg">
+                    <h1>SOPHIA</h1>
+                    <P>Follow and support the mech_coder._ page and to get latest updates</P>
+                    <div class=social-links>
+                        <img src="facebook.png">
+                        <img src="instagram.png">
+                        <img src="twitter.png">
+                        <img src="linkedin.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var svgCircle = document.getElementById("svgCircle" );
+        var step1 = document.getElementById("step1" );
+        var step2 = document.getElementById("step2" );
+        var step3 = document.getElementById("step3" );
+        var step4 = document.getElementById("step4" );
+        var step5 = document.getElementById("step5" );
+        var main = document.getElementById("main" );
+        var userBox = document.getElementById("userBox" );
+        
+        main.style.backgroundImage ="url(img-1.jpg)";
+
+
+        step1.addEventListener('click', ()=>{
+            svgCircle.style.strokeDashoffset="1004";
+            main.style.backgroundImage ="url(img-2.jpg)";
+            userBox. style.top = "-350px"
+
+        });
+        step2.addEventListener('click', ()=>{
+            svgCircle.style.strokeDashoffset="753";
+            main.style.backgroundImage ="url(img-3.jpg)";
+            userBox.style.top = "-800px";
+        });
+        step3.addEventListener('click', ()=>{
+            svgCircle.style.strokeDashoffset="502";
+            main.style.backgroundImage ="url(img-4.jpg)";
+            userBox.style.top = "-1250px";
+           
+
+        });
+        step4.addEventListener('click', ()=>{
+            svgCircle.style.strokeDashoffset="251";
+            main.style.backgroundImage ="url(img-5.jpg)";
+            userBox.style.top = "-1700px";
+            
+        });
+        step5.addEventListener('click', ()=>{
+            svgCircle.style.strokeDashoffset="0";
+            main.style.backgroundImage ="url(img-1.jpg)";
+            userBox.style.top = "100px";
+           
+        });
+    </script>
+
+</body>
+</html>
